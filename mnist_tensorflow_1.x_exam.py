@@ -1,5 +1,7 @@
 import tensorflow as tf 
 import keras
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 
 # Model Parameters
@@ -97,8 +99,8 @@ with tf.Session() as sess:
     print("Tensorflow:",tf._version_)
     
     data = {
-    '이름': ['김병규'],
-    '학번': [12345],
+    '이름': ['박지현'],
+    '학번': [2514774],
     '학과': ['인공지능공학부']
     }
 
