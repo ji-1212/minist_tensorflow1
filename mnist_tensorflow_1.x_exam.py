@@ -96,7 +96,7 @@ with tf.Session() as sess:
     # Calculate accuracy for MNIST test images
     print("Final Test Accuracy:", sess.run(accuracy, feed_dict={X: x_test, Y: y_test}),"%")
     print()
-    print("Tensorflow:",tf._version_)
+    print("Tensorflow:",tf.__version__)
     
     data = {
     '이름': ['박지현'],
